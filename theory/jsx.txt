@@ -1,0 +1,24 @@
+- Khai báo Component: Tương tự như khai báo hàm nhưng tên Component phải viết hoa chữ cái đầu tiên.
+Các thẻ cần được đặt trong 1 parents Element
+VD: //Khai báo Component:
+    function ShowStudent() {
+        return(
+            <>
+                <div>ahihi</div>
+                <p>Demo</p>
+            </>
+        ) 
+    }
+
+    //Gọi Component: gọi trong Root
+    createRoot(document.getElementById("root")).render(
+        <ShowStudent />
+    )
+
+-Truyền tham số cho Component
+    <ShowStudent key={value}/>
+    // trên đây, tham số truyền vào sẽ là 1 object. Ví dụ truyền key = student; value = student (object đã tạo)
+    => Giá trị của tham số khi truyền vào sẽ là 1 object nằm trong object có tên là student
+    //Nếu chỉ muốn lấy ra giá trị của object student đã tạo thì có thể khai báo cho tham số truyền vào theo kiểu Destructoring
+    VD: function ShowStudent({student}) {}
+    => khi đó Component sẽ chỉ lấy ra object nằm trong

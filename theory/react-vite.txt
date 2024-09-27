@@ -1,0 +1,10 @@
+terminal VS
+- npm create vite@lastest demo -- --template react
+- cd demo
+- npm i (npm install)
+- npm run dev
+- Thông tin hiện lên màn hình cần được viết trong 1 thẻ có ID là root
+    // Tạo Root (select thẻ có id là root)
+    // render(): hàm để hiển thị ra 1 danh sách 
+    createRoot(document.getElementById('root')).render()
+- Các thẻ dạng jsx cần được đặt trong parents Element
