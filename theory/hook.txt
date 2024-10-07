@@ -1,0 +1,10 @@
+---------------------useEffect-----------------
+ * Case 1: trường hợp useEffect không có tham số thứ 2 thì useEffect sẽ chạy mỗi khi 
+component render lại (tương tự state thay đổi)
+ * Case 2: trường hợp useEffect có tham số thứ 2 là mảng rỗng [] thì useEffect sẽ chạy 
+1 lần duy nhất sau khi component render lần đầu tiên
+ * Case 3: trường hợp useEffect có tham số thứ 2 là 1 mảng chứa các biến thì useEffect 
+sẽ chạy mỗi khi các biến trong mảng thay đổi
+-------------------
+Cú pháp: useEffect(()=>{}, []): Có 2 tham số truyền vào. Tham số đầu tiên là 1 function, tham số thứ 2
+là 1 mảng (điều kiện để chạy useEffect)

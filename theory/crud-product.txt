@@ -1,0 +1,10 @@
+1. Thêm
+ * B1: Tạo các input control
+ * B2: set name cho input control và sự kiện onChange cho từng control
+ * B3: Tạo hàm onChange để lấy giá trị từ input control
+ * B4: Sử dụng cú pháp computed property name để lấy giá trị từ input control
+ * B5: set giá trị cho state product
+ * B6: Sử dụng state product để thêm sản phẩm mới vào mảng products
+
+2. Đọc (fake data)
+cho mảng object vào useState sau đó dùng map để render

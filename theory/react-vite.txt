@@ -1,5 +1,5 @@
 terminal VS
-- npm create vite@lastest demo -- --template react
+- npm create vite@latest demo -- --template react
 - cd demo
 - npm i (npm install)
 - npm run dev
