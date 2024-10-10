@@ -3,16 +3,17 @@
     {
       "id": "1",
       "name": "product 1",
-    "price": 1000
+      "price": 1000
     },
     {
       "id": "2",
-      "name": "product 2"
+      "name": "product 2",
+      "price": "1000"
     },
     {
-      "id": "7678",
-      "name": "new",
-      "price": "1"
+      "id": "6578",
+      "name": "new 123",
+      "price": "11111"
     }
   ]
 }

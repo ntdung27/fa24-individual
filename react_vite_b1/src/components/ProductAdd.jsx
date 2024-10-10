@@ -17,6 +17,7 @@ const ProductAdd = ( { addItem } ) => {
             console.log(error);
         }
     };
+    
     return (
         <div className="container mt-5">
             <h1>Thêm mới sản phẩm</h1>
