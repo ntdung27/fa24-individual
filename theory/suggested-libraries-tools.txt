@@ -1,0 +1,19 @@
+----------VITE
+- npm create vite@latest demo -- --template react
+----------JSON SERVER AUTH
+- npm i json-server@0.17.4 json-server-auth -D
+----------ANT DESIGN 
+- npm i antd
+----------TAILWINDCSS
+- npm install -D tailwindcss postcss autoprefixer
+- npx tailwindcss init -p
+----------BOOTSTRAP
+- npm i bootstrap
+----------REACT ROUTER DOM
+- npm i react-router-dom
+----------REACT DOM
+- npm i react-dom
+----------AXIOS 
+- npm i axios 
+----------REACT HOOK FORM
+- npm i react-hook-form

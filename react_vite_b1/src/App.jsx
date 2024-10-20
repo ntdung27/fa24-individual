@@ -4,6 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import ProductList from "./components/ProductList";
 import ProductAdd from "./components/ProductAdd";
 import ProductEdit from "./components/ProductEdit";
+import SignUp from "./components/SignUp";
+import SignIn from "./components/SignIn";
 
 const App = () => {
 	// *Call API lấy ra danh sách sản phẩm
@@ -25,6 +27,7 @@ const App = () => {
 		const confirm = window.confirm("Bạn có chắc chắn muốn xóa sản phẩm này không?");
 		if (confirm) {
 			await axios.delete(`${import.meta.env.VITE_API_URL}/products/${id}`);
+            alert("Xóa sản phẩm thành công!");
 			setProducts(products.filter((item) => item.id !== id));
 		}
 	};
@@ -63,6 +66,8 @@ const App = () => {
 				<Route path="/products" element={<ProductList products={products} removeItem={removeItem} />} />
 				<Route path="/products/add" element={<ProductAdd addItem={addItem} />} />
 				<Route path="/products/edit/:id" element={<ProductEdit editItem={editItem} />} />
+				<Route path="/signup" element={<SignUp />} />
+				<Route path="/signin" element={<SignIn />} />
 			</Routes>
 		</div>
 	);

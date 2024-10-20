@@ -4,13 +4,14 @@
 import { Link } from "react-router-dom";
 
 const ProductList = ({ products, removeItem }) => {
+	const token = localStorage.getItem("token");
 	return (
 		<div>
 			<h1 className="text-center m-5">Danh sách sản phẩm</h1>
 			<div className="container">
-            <button className="btn btn-success">
-				<Link to="/products/add" className="text-light">Thêm sản phẩm mới</Link>
-			</button>
+				<Link to="/products/add" className="text-light">
+					<button className="btn btn-success">Thêm sản phẩm mới</button>
+				</Link>
 				<table className="table table-hover">
 					<thead>
 						<tr>
@@ -27,19 +28,29 @@ const ProductList = ({ products, removeItem }) => {
 								<td>{item.name}</td>
 								<td>{item.price}</td>
 								<td>
-									<button className="btn btn-danger" onClick={() => removeItem(item.id)}>
+									<button className="btn btn-danger me-2" onClick={() => removeItem(item.id)}>
 										Xóa
 									</button>
-									<button className="btn btn-success">
-										<Link to={`/products/edit/${item.id}`} className="text-light">
-											Cập nhật
-										</Link>
-									</button>
+									<Link to={`/products/edit/${item.id}`}>
+										<button className="btn btn-success">Cập nhật</button>
+									</Link>
 								</td>
 							</tr>
 						))}
 					</tbody>
 				</table>
+				{!token ? (
+					<>
+						<Link to={`/signup`}>
+							<button className="btn btn-dark me-2">Đăng kí</button>
+						</Link>
+						<Link to={`/signin`}>
+							<button className="btn btn-dark">Đăng nhập</button>
+						</Link>
+					</>
+				) : (
+					"Bạn đã đăng nhập"
+				)}
 			</div>
 		</div>
 	);

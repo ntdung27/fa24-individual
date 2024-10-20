@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 const ProductAdd = ( { addItem } ) => {
-    const { register, handleSubmit, reset } = useForm();
+    const { register, handleSubmit, reset, formState: {errors} } = useForm();
     const navigate = useNavigate();
 
     const onSubmit = (formData) => {
@@ -19,20 +19,22 @@ const ProductAdd = ( { addItem } ) => {
     };
     
     return (
-        <div className="container mt-5">
+        <div className="container w-50 mt-5">
             <h1>Thêm mới sản phẩm</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="mb-3">
-                    <label htmlFor="" className="form-label">
+                    <label htmlFor="name" className="form-label">
                         Tên sản phẩm
                     </label>
-                    <input type="text" className="form-control" {...register("name")} />
+                    <input type="text" id="name" className="form-control" {...register("name", {required: "Bắt buộc nhập"})} />
+                    {errors.name && <p className="text-danger">{errors.name.message}</p>}
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="" className="form-label">
+                    <label htmlFor="price" className="form-label">
                         Giá sản phẩm
                     </label>
-                    <input type="number" className="form-control" {...register("price")} />
+                    <input type="number" id="price" className="form-control" {...register("price", {required: "Bắt buộc nhập", min: {value: 0, message:"Nhập giá không âm"}})} />
+                    {errors.price && <p className="text-danger">{errors.price.message}</p>}
                 </div>
                 <button className="btn btn-primary" type="submit">
                     Thêm

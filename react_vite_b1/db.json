@@ -7,13 +7,20 @@
     },
     {
       "id": "2",
-      "name": "product 2",
-      "price": "1000"
+      "name": "sâsasasa",
+      "price": "111111"
+    }
+  ],
+  "users": [
+    {
+      "email": "thuydng2004@gmail.com",
+      "password": "$2a$10$P3DsyyP3x8.VCX1OWoJtFenBVrzPfwIo5Ka7G2HTjdUhVqxCgoiNe",
+      "id": 1
     },
     {
-      "id": "6578",
-      "name": "new 123",
-      "price": "11111"
+      "email": "dung@gmail.com",
+      "password": "$2a$10$fRCUQawupXbyEiRa7vE1S.wp/BobL.emF7IjHZ3lCSxA66AxoXnay",
+      "id": 2
     }
   ]
 }
