@@ -1,10 +1,10 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Product 1",
-      "price": 1000,
-      "description": "Desc 1"
+      "name": "Product 1 update",
+      "price": 10004444,
+      "description": "Desc 12344",
+      "id": 1
     },
     {
       "id": 2,
@@ -23,6 +23,12 @@
       "price": 1111,
       "description": "aaa",
       "id": 4
+    },
+    {
+      "name": "newPro",
+      "price": 1111,
+      "description": "adsjkfjkds",
+      "id": 5
     }
   ]
 }

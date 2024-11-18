@@ -13,7 +13,7 @@ export class ProductListComponent {
   products: any = [];
 
   constructor(private http: HttpClient) {}
-  ngOnInit() {
+  ngOnInit() {  
     this.http.get('http://localhost:3000/products').subscribe((data) => {
       this.products = data;
     });

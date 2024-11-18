@@ -6,7 +6,6 @@
     <table class="table table-hover">
         <thead>
             <tr>
-                <th>#</th>
                 <th>Name</th>
                 <th>Price</th>
                 <th>Description</th>
@@ -14,19 +13,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let product of products; index as i">
-                <td>{{i + 1}}</td>
+            <tr>
                 <td>{{product.name}}</td>
                 <td>{{product.price}}</td>
                 <td>{{product.description}}</td>
                 <td>
-                    <a href="/admin/products/{{product.id}}/detail">
-                        <button class="btn btn-dark my-2">Detail</button>
-                    </a>
                     <a href="/admin/products/{{product.id}}/edit">
                         <button class="btn btn-warning my-2">Update</button>
                     </a>
-                    <button class="btn btn-danger" (click)="removeItem(product.id)">Delete</button>
                 </td>
             </tr>
         </tbody>
