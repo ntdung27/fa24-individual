@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Products 1",
+      "price": 10000,
+      "description": "Description 1",
+      "images": [
+        "https://picsum.photos/100"
+      ],
+      "inStock": true,
+      "category": "Category 1"
+    },
+    {
+      "id": 2,
+      "name": "Products 2",
+      "price": 20000,
+      "description": "Description 2",
+      "images": [
+        "https://picsum.photos/100"
+      ],
+      "inStock": true,
+      "category": "Category 1"
+    },
+    {
+      "name": "Products 3 update",
+      "price": 30000,
+      "description": "Description 3 update",
+      "inStock": false,
+      "category": "Category 3",
+      "images": [
+        "https://picsum.photos/100",
+        "https://res.cloudinary.com/lesson-image/image/upload/v1731858507/vl69x3itdskktnhrs2lg.jpg"
+      ],
+      "id": 3
+    },
+    {
+      "name": "newPro11 update",
+      "price": 6,
+      "description": "1111",
+      "inStock": true,
+      "category": "Category 2",
+      "images": [
+        "https://res.cloudinary.com/ecommercer2021/image/upload/v1731480565/brcgljlwrj0qghww6zhz.png",
+        "https://res.cloudinary.com/ecommercer2021/image/upload/v1731480565/ugb6hkc07f3cqfqznmg0.png"
+      ],
+      "id": 7
+    },
+    {
+      "name": "New Product",
+      "price": 123,
+      "description": "afdfdfds",
+      "inStock": false,
+      "category": "Category 3",
+      "images": [
+        "https://res.cloudinary.com/lesson-image/image/upload/v1731851613/ulpaoi74l4wkcxryyfvv.jpg",
+        "https://res.cloudinary.com/lesson-image/image/upload/v1731851616/q3i4z3qq5cy0ya5h6ebk.jpg"
+      ],
+      "id": 8
+    },
+    {
+      "name": "aaaaaaaa",
+      "price": 789,
+      "description": "hjghjghj",
+      "inStock": true,
+      "category": "Category 5",
+      "images": [
+        "https://res.cloudinary.com/lesson-image/image/upload/v1731856872/nx7nd8sdppqzienirbp2.jpg",
+        "https://res.cloudinary.com/lesson-image/image/upload/v1731856880/o66db3zsoin7gj2wrqbx.jpg",
+        "https://res.cloudinary.com/lesson-image/image/upload/v1731856933/xr428uj50fawmipn829o.jpg"
+      ],
+      "id": 9
+    },
+    {
+      "name": "newPro11 update",
+      "price": 123,
+      "description": "dsđsadá",
+      "inStock": true,
+      "category": "Category 5",
+      "images": [
+        "https://res.cloudinary.com/lesson-image/image/upload/v1731926051/r3basb9ewmsnj514zqbz.jpg"
+      ],
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$Ucz81221HnICEeobNgY/qeUnvYOeyKQ/ZXJxPdar.dckb2DLHVu62",
+      "username": "admin",
+      "id": 1
+    },
+    {
+      "email": "user@gmail.com",
+      "password": "$2a$10$T9BG8jnIG6iAy6z/hu4vNuKqcqiCkkTsWj3Dsl7Kk/M16LpIxfJQu",
+      "username": "user",
+      "id": 2
+    }
+  ]
+}

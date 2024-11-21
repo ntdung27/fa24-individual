@@ -1,0 +1,4 @@
+1. npm create vite@latest lessons -- --template react-ts
+2. npm i json-server@0.17.4 json-server-auth
+3. npm i antd
+4. npm i @tanstack/react-query

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  button {
+    background-color: #827B75;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: rgb(6, 53, 6);
+    transition: ease-in-out .25s;
+  }

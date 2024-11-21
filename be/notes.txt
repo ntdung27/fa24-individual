@@ -1,0 +1,35 @@
+tạo file package.json
+	npm init
+Thêm module trong package.json
+    "type": "module"
+chạy chương trình
+	node server.js
+tải express
+	npm i express
+tải nodemon:  hỗ trợ tự động chạy lại node server
+	npm i -g nodemon
+	(chạy code: nodemon server.js)
+
+---------------------------------
+REQUEST:
+req.body: gửi qua form
+req.query: url
+req.params: id
+
+RESPONSE:
+res.send('<html/>')
+res.render('link to view')
+res.json() //dùng cho API
+res.redirect()
+
+-----------------
+Cài đặt ejs hỗ trợ xây dựng giao diện
+    npm i ejs
+
+-----------------
+Cài đặt mongoose để kết nối đến MongoDB
+    npm i mongoose
+
+-----------------
+
+

@@ -1,0 +1,19 @@
+1. Tạo package (npm init), cài dependencies (express, nodemon, ejs, mongoose)
+2. Tạo 3 folder theo mô hình MVC (models, controllers, views), file server.js
+3. Trong folder models tạo file Product.js
+    - Khởi tạo Schema: const Schema = mongoose.Schema
+    - Khai báo ProductSchema: ProductSchema = new Schema ({name: {type: String, required: true},...},{timestamps: true})
+    - Khai báo 1 model Product từ ProductSchema
+    - Export
+4. Trong folder controllers tạo file ProductController
+    - Khởi tạo class ProductController
+    - Viết method
+5. server.js    
+    - Khởi tạo express
+    - Khai báo cổng
+    - Cấu hình template engine (ejs)
+    - Cấu hình middleware
+    - Khởi tạo object từ controller
+    - Kết nối cơ sở dữ liệu
+    - Viết router
+*) import model, controller cần thêm .js cho tên file
