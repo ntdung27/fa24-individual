@@ -29,6 +29,12 @@
       "price": 1111,
       "description": "adsjkfjkds",
       "id": 5
+    },
+    {
+      "name": "newPro update",
+      "price": 12345,
+      "description": "dsadsad",
+      "id": 6
     }
   ]
 }
