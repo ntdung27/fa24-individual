@@ -36,5 +36,13 @@
       "description": "dsadsad",
       "id": 6
     }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$3DDx/y6fsolTW8ejAF7Vl.NJuL6NY6TvnhSf8JKbrOqWuqCW1l22W",
+      "username": "admin",
+      "id": 1
+    }
   ]
 }

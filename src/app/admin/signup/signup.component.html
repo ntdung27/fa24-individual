@@ -1,0 +1,28 @@
+<div class="container mx-auto w-75">
+    <h1>Sign up</h1>
+    <form [formGroup]="form" (submit)="onSubmit()">
+        <div class="">
+            <label for="" class="form-label">Username</label>
+            <input type="text" class="form-control" placeholder="Enter the username" formControlName="username">
+            <!-- <div *ngIf="(form.get('username').invalid && form.get('username').dirty) || form.get('username').touched">
+                <div *ngIf="form.get('username').errors.required">Username is required</div>
+                <div *ngIf="form.get('username').errors.minlength">At least 6 characters</div>
+            </div> -->
+        </div>
+        <div class="">
+            <label for="" class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter the email" formControlName="email">
+            <!-- <div *ngIf="(form.get('email').invalid && form.get('email').dirty) || form.get('email').touched">
+                <div *ngIf="form.get('email').errors.required">Email is required</div>
+                <div *ngIf="form.get('email').errors.minLenght">At least 6 characters</div>
+            </div> -->
+        </div>
+        <div class="">
+            <label for="" class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Enter the password" formControlName="password">
+        </div>
+        <button htmlType="submit" class="btn btn-success mt-3" >Sign up</button>
+    </form>
+</div>
+
+<!-- [disabled]="form.invalid" -->
